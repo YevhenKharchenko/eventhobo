@@ -1,0 +1,111 @@
+.role-section {
+}
+
+.role-bg-wrapper {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/role/role-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 132px;
+    padding-bottom: 94px;
+    max-width: 1440px;
+    background-image: url(../img/role/role-bg-desk.png);
+  }
+}
+
+.role-container {
+}
+
+.role-title {
+  color: #000;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    margin-bottom: 39px;
+  }
+}
+
+.role-content-wrapper {
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.role-top-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-bottom: 39px;
+  }
+}
+
+.role-list-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    margin-bottom: 42px;
+  }
+}
+
+.role-line-img {
+  min-width: 14px;
+}
+
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.role-list-item {
+}
+
+.role-item-title {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f50;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.role-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+
+  @include media(desktop) {
+  }
+}
+
+.role-bottom-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
