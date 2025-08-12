@@ -1,26 +1,25 @@
 .hero-section {
-  background: #000017;
   @include media(desktop) {
   }
 }
 
 .hero-bg-wrapper {
-  padding-top: 139px;
-  padding-bottom: 295px;
+  padding-top: 136px;
+  padding-bottom: 270px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.png);
+  background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
-  background-position: top 56px center;
+  background-position: bottom center;
   background-size: auto;
 
   @include media(desktop) {
-    padding-top: 195px;
-    padding-bottom: 220px;
+    padding-top: 169px;
+    padding-bottom: 274px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.png);
-    background-position: top 74px center;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-position: top center;
   }
 }
 
@@ -30,45 +29,43 @@
 }
 
 .hero-title {
-  font-family: 'JetBrains Mono', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #fff;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #9e4b23;
   margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 42px;
-    margin-bottom: 42px;
-    max-width: 628px;
+    font-size: 60px;
+    margin-bottom: 28px;
   }
 }
 
-.hero-span {
-  color: #f50;
-}
-
 .hero-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 1.5;
+  color: #051d2d;
   margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 24px;
-    margin-bottom: 42px;
-    max-width: 514px;
+    font-size: 28px;
+    margin-bottom: 28px;
+    max-width: 845px;
   }
 }
 
 .hero-bottom-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Figtree', sans-serif;
+  font-style: italic;
   font-weight: 700;
   font-size: 18px;
-  color: #fff;
+  line-height: 1.5;
+  color: #011a22;
 
   @include media(desktop) {
-    font-size: 24px;
+    font-size: 28px;
   }
 }

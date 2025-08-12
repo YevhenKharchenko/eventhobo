@@ -1,20 +1,46 @@
 .header {
-  background: #000017;
-  padding: 8px 0;
+  border-radius: 0 0 12px 12px;
+  background-color: #2a1306;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    background: #fff;
-    padding: 20px 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
+.header.menu-is-open {
+  border-radius: 0;
+}
+
+.header-bg-wrapper {
+  padding: 8px 0;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding: 36px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(253, 245, 230, 0) 43.9%,
+        rgba(253, 245, 230, 0.1) 55.09%,
+        rgba(253, 245, 230, 0.8) 78.04%,
+        #fdf5e6 97.46%
+      ),
+      url(../img/header/hero-bg-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
   }
 }
 
 .header-container {
   @include media(desktop) {
-    padding: 0 53px;
   }
 }
 
@@ -29,10 +55,7 @@
 }
 
 .header-logo-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Fraunces', sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
@@ -62,38 +85,20 @@
 
 .nav-list-link {
   @include media(desktop) {
-    padding: 8px 24px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
+    padding: 8px 16px;
+    border: 1px solid #887159;
+    border-radius: 12px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 600;
     font-size: 14px;
     color: #000;
     transition: all 0.3s ease-in-out;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      width: 10px;
-      height: 10px;
-      border-radius: 100%;
-      background-color: #ff6a00;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
-
-    &:hover::before,
-    &:active::before,
-    &.active::before {
-      opacity: 1;
-    }
 
     &:hover,
-    &:active,
     &.active {
-      border-bottom: 2px solid #ff6a00;
+      box-shadow: 0 4px 7px 0 rgba(255, 255, 255, 0.1);
+      background: rgba(183, 65, 14, 0.5);
+      border: 1px solid #b7410e;
     }
   }
 }
