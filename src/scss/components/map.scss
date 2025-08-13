@@ -1,48 +1,41 @@
-.works-section {
-  background: linear-gradient(
-    180deg,
-    #ffeec4 2.91%,
-    #f9ebc7 37.12%,
-    #c3f2ff 100%
-  );
+.map-section {
+  background: #fdedc6;
 }
 
-.works-bg-wrapper {
-  padding-top: 42px;
-  padding-bottom: 258px;
+.map-bg-wrapper {
+  padding-top: 56px;
+  padding-bottom: 210px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/works/works-bg-mob.png);
+  background-image: url(../img/map/map-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: bottom 33px center;
+  background-position: bottom center;
   background-size: auto;
 
   @include media(desktop) {
     padding-top: 72px;
-    padding-bottom: 56px;
+    padding-bottom: 167px;
     max-width: 1440px;
-    background-image: url(../img/works/works-bg-desk.png);
-    background-position: bottom 66px right 193px;
+    background-image: url(../img/map/map-bg-desk.png);
   }
 }
 
-.works-container {
+.map-container {
 }
 
-.works-title {
+.map-title {
   max-width: 234px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
     max-width: max-content;
-    margin-bottom: 72px;
   }
 }
 
-.works-content-wrapper {
+.map-content-wrapper {
   @include media(desktop) {
     max-width: max-content;
     margin-left: auto;
@@ -50,35 +43,44 @@
   }
 }
 
-.works-list {
+.map-top-text {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #011a22;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.map-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 
   @include media(desktop) {
-    gap: 18px;
-    margin-bottom: 56px;
+    gap: 12px;
+    margin-bottom: 54px;
+    position: relative;
+    right: -100px;
   }
 }
 
-.works-list-item {
+.map-list-item {
   display: flex;
   align-items: center;
-  gap: 24px;
 }
 
-.works-item-dot {
-  min-width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  background-color: #bb612e;
-
-  @include media(desktop) {
-  }
+.map-item-img-wrapper {
+  min-width: 84px;
 }
 
-.works-item-text {
+.map-item-text {
   font-family: 'Fraunces', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -86,14 +88,15 @@
 
   @include media(desktop) {
     font-size: 20px;
+    max-width: 534px;
   }
 }
 
-.works-bottom-text {
+.map-bottom-text {
   font-family: 'Fraunces', sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  color: #011a22;
+  font-size: 18px;
+  color: #051d2d;
   text-align: center;
 
   @include media(desktop) {

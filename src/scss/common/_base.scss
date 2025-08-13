@@ -55,10 +55,8 @@ html {
   font-size: 24px;
   text-align: center;
   color: #9e4b23;
-  margin-bottom: 42px;
 
   @include media(desktop) {
     font-size: 32px;
-    margin-bottom: 72px;
   }
 }

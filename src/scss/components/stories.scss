@@ -1,7 +1,7 @@
-.simulation-section {
+.stories-section {
 }
 
-.simulation-section-wrapper {
+.stories-section-wrapper {
   padding-top: 56px;
   padding-bottom: 87px;
   max-width: 375px;
@@ -16,7 +16,7 @@
   }
 }
 
-.simulation-title {
+.stories-title {
   color: #000;
   margin-bottom: 32px;
 
@@ -25,7 +25,7 @@
   }
 }
 
-.simulation-top-text {
+.stories-top-text {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -39,7 +39,7 @@
   }
 }
 
-.simulation-swiper-container {
+.stories-swiper-container {
   max-width: 343px;
   margin-left: auto;
   margin-right: auto;
@@ -49,11 +49,11 @@
   }
 }
 
-.simulation-swiper-container.show {
+.stories-swiper-container.show {
   visibility: visible;
 }
 
-.simulation-swiper-wrapper {
+.stories-swiper-wrapper {
   @include media(desktop) {
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@
   }
 }
 
-.simulation-slide {
+.stories-slide {
   box-shadow: 6px 4px 5px 0 #163d5c;
   background: #ff6a00;
   opacity: 0.9;
@@ -82,7 +82,7 @@
   }
 }
 
-.simulation-slide-title {
+.stories-slide-title {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -95,7 +95,7 @@
   }
 }
 
-.simulation-slide-text {
+.stories-slide-text {
   font-family: 'JetBrains Mono', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -120,7 +120,7 @@
   }
 }
 
-.simulation-dot {
+.stories-dot {
   width: 14px;
   height: 14px;
   transition: transform 0.3s ease-in-out;
@@ -129,37 +129,6 @@
   cursor: pointer;
 }
 
-.simulation-dot.active {
+.stories-dot.active {
   background-color: #0b1027;
-}
-
-.simulation-email-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 61px;
-
-  @include media(desktop) {
-    font-size: 20px;
-    margin-top: 42px;
-  }
-}
-
-.simulation-bottom-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: #000;
-  margin-top: 32px;
-
-  @include media(desktop) {
-    font-size: 20px;
-    margin-top: 24px;
-  }
 }

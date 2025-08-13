@@ -1,11 +1,11 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const simulationDots = document.querySelectorAll('.simulation-dot');
+const storiesDots = document.querySelectorAll('.stories-dot');
 
-let simulationSwiper;
+let storiesSwiper;
 
-simulationSwiper = new Swiper('.simulation-swiper-container', {
+storiesSwiper = new Swiper('.stories-swiper-container', {
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
@@ -29,24 +29,22 @@ simulationSwiper = new Swiper('.simulation-swiper-container', {
   },
   on: {
     init: () => {
-      document
-        .querySelector('.simulation-swiper-container')
-        .classList.add('show');
+      document.querySelector('.stories-swiper-container').classList.add('show');
     },
     slideChange: function () {
-      updateSimulationDots(this.realIndex);
+      updateStoriesDots(this.realIndex);
     },
   },
 });
 
-function updateSimulationDots(index) {
-  simulationDots.forEach((dot, i) => {
+function updateStoriesDots(index) {
+  storiesDots.forEach((dot, i) => {
     dot.classList.toggle('active', i === index);
   });
 }
 
-simulationDots.forEach((dot, index) => {
+storiesDots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
-    simulationSwiper.slideTo(index);
+    storiesSwiper.slideTo(index);
   });
 });
