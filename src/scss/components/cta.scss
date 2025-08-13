@@ -1,0 +1,108 @@
+.cta-section {
+  background: #feedc7;
+}
+
+.cta-bg-wrapper {
+  padding-top: 42px;
+  padding-bottom: 206px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/cta/cta-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 72px;
+    padding-bottom: 54px;
+    max-width: 1440px;
+    background-image: url(../img/cta/cta-bg-desk.png);
+    background-position: bottom left;
+  }
+}
+
+.cta-container {
+}
+
+.cta-title {
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    text-align: left;
+    margin-bottom: 28px;
+  }
+}
+
+.cta-content-wrapper {
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+  }
+}
+
+.cta-top-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+}
+
+.cta-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 43px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+    padding-left: 60px;
+  }
+}
+
+.cta-list-item {
+}
+
+.cta-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+
+  @include media(desktop) {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.cta-link {
+  box-shadow: 0 4px 4px 0 rgba(158, 177, 151, 0.3);
+  background: #af4a22;
+  border-radius: 8px;
+  padding: 12px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin-left: 61px;
+    margin-right: 0;
+  }
+}

@@ -1,9 +1,10 @@
 .contact-section {
+  background: #feedc7;
 }
 
 .contact-bg-wrapper {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 140px;
+  padding-bottom: 67px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -13,22 +14,53 @@
   background-size: auto;
 
   @include media(desktop) {
-    padding-top: 197px;
-    padding-bottom: 123px;
+    padding-top: 72px;
+    padding-bottom: 74px;
     max-width: 1440px;
     background-image: url(../img/contact/contact-bg-desk.png);
+    background-position: top left;
   }
 }
 
 .contact-container {
 }
 
+.contact-content-wrapper {
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+  }
+}
+
 .contact-title {
-  color: #000;
-  margin-bottom: 59px;
+  margin-bottom: 14px;
 
   @include media(desktop) {
-    margin-bottom: 54px;
+    text-align: left;
+    margin-bottom: 42px;
+    margin-left: 79px;
+  }
+}
+
+.contact-top-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  max-width: 307px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    text-align: left;
+    font-weight: 700;
+    font-size: 22px;
+    max-width: 380px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 42px;
   }
 }
 
@@ -37,32 +69,28 @@
   flex-direction: column;
 
   @include media(desktop) {
-    justify-content: center;
     max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
-.contact-email-link {
-  font-family: 'JetBrains Mono', sans-serif;
+.contact-info-link {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
+  color: #000;
   margin-bottom: 1em;
-  color: #000;
 
   @include media(desktop) {
-    font-size: 22px;
   }
 }
 
-.contact-partnership-link {
-  font-family: 'JetBrains Mono', sans-serif;
+.contact-routes-link {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   color: #000;
+  margin-bottom: 1em;
 
   @include media(desktop) {
-    font-size: 22px;
   }
 }

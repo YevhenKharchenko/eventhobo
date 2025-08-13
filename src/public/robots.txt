@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://eventge.pro/sitemap.xml
+Sitemap: https://eventhobo.pro/sitemap.xml
